@@ -7,7 +7,7 @@ async function mockApiCall() {
         } else {
           reject(new Error('Mock API Call Failed'));
         }
-      }, 1000); // Simulate a 1 second delay for the API call
+      }, 1000); // This simulates a 1 second delay for the API call
     });
   }
   
@@ -33,7 +33,7 @@ async function mockApiCall() {
     }
   }
   
-  // Example usage
+  // Example of Usage of the Implementation above
   (async () => {
     try {
       let data = await fetchWithExponentialBackoff(mockApiCall);
